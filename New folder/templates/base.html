@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %} this is the project of usersystem</title>
+</head>
+<body>
+    <table>
+        <ul>
+    
+            <li>  <a href="/">home</a></li>
+            <li>  <a href="sign_up">sign_up</a></li>
+            <li>  <a href="logout">logout</a></li>
+            <li>   <a href="user_login">login</a></li>
+</ul>
+</table>
+<style>
+
+    body{
+
+    }
+    table ul{
+        text-align: center;
+
+    }
+ a{
+     text-align: center;
+     text-decoration: none;
+     list-style: none;
+   
+
+    }
+</style>
+{% block body %}{% endblock body %}
+</body>
+</html>

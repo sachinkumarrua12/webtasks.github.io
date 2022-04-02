@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block body %}
+<style>
+    small{
+
+        background-color: aqua;
+        color: green;
+    }
+</style>
+<h2>welcome {{name}} on profile page</h2>
+{% if messages %}
+{% for message in messages %}
+<small {% if message.tags %}  class="{{message.tags}}" {% endif %}> {{message}} </small>
+{% endfor %}
+{% endif %}
+<a href="user_login"> logout</a>
+{% endblock body %}
